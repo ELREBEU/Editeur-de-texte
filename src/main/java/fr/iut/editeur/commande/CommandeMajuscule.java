@@ -9,7 +9,7 @@ public class CommandeMajuscule extends CommandeDocument {
     }
 
     @Override
-    public void executer(){
+    public void CommandeExecuter(){
         if(parameters.length < 2) {
             System.err.println("Format attendu : ajouter;texte");
             return;
@@ -17,6 +17,5 @@ public class CommandeMajuscule extends CommandeDocument {
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
         this.document.majuscules(debut,fin);
-        super.executer();
     }
 }

@@ -1,6 +1,7 @@
 package fr.iut.editeur.commande.invoker;
 
 import fr.iut.editeur.commande.Commande;
+import fr.iut.editeur.commande.CommandeDocument;
 
 import java.util.Stack;
 
@@ -15,7 +16,8 @@ public class CommandeInvoker {
         return instance;
     }
 
-    private CommandeInvoker() {}
+    private CommandeInvoker() {
+    }
 
     public void executer(Commande commande) {
         commande.executer();

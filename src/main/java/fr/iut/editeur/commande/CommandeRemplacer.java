@@ -8,7 +8,7 @@ public class CommandeRemplacer extends CommandeDocument{
     }
 
     @Override
-    public void executer(){
+    public void CommandeExecuter(){
         if(parameters.length < 2) {
             System.err.println("Format attendu : ajouter;texte");
             return;
@@ -23,6 +23,5 @@ public class CommandeRemplacer extends CommandeDocument{
             chaine = parameters[3];
         }
         this.document.remplacer(debut,fin,chaine);
-        super.executer();
     }
 }
