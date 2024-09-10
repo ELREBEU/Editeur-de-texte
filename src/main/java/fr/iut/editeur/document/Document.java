@@ -38,7 +38,7 @@ public class Document {
     }
 
     public void clear(){
-        setTexte("bug à trouver");
+        setTexte("");
     }
 
     @Override
